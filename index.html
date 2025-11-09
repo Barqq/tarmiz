@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جمعية ترميز - Tarmeez Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon">
+         <img src="logo.svg" alt="جمعية ترميز">
+        </div>
+      </div>
+      <nav style="display: flex; align-items: center; gap: 2rem;">
+        <ul class="nav-links">
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#programs">البرامج</a></li>
+          <li><a href="#community">مجتمعنا</a></li>
+          <li><a href="#members">أعضاء الجمعية</a></li>
+          <li><a href="#partners">شركاؤنا</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+        <a href="#community" class="btn-join">انضم لنا</a>
+      </nav>
+      <div class="header-controls">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="#about" class="mobile-link">من نحن</a></li>
+      <li><a href="#programs" class="mobile-link">البرامج</a></li>
+      <li><a href="#community" class="mobile-link">مجتمعنا</a></li>
+      <li><a href="#members" class="mobile-link">أعضاء الجمعية</a></li>
+      <li><a href="#partners" class="mobile-link">شركاؤنا</a></li>
+      <li><a href="#contact" class="mobile-link">تواصل</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>جمعية ترميز</h1>
+        <p class="subtitle">نُمكّن مستقبل التقنية في منطقة الجوف.</p>
+        <p>نؤمن أن التعليم التطبيقي هو الطريق الحقيقي لبناء فرص مهنية وإحداث أثر واضح في المجتمع.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-secondary">تعرف علينا</a>
+          <a href="#community" class="btn btn-primary">انضم للمجتمع</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="Asset 2.svg" alt="تقنية ترميز" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Supervision Section -->
+  <section class="supervision">
+    <div class="container">
+      <div class="supervision-title">جمعية ترميز تحت إشراف وزارة الاتصالات وتقنية المعلومات</div>
+      <div class="supervision-subtitle">ومسجلة لدى المركز الوطني للقطاع غير الربحي</div>
+
+      <!-- زر يودّي لصفحة التحقق -->
+      <a class="supervision-number" href="https://es.ncnp.gov.sa/v5/nonprofits/7953" target="_blank" rel="noopener noreferrer">
+        رقم التحقق: 1000814300
+      </a>
+
+      <div class="supervision-logos">
+        <a href="https://es.ncnp.gov.sa/v5/nonprofits/7953" target="_blank" rel="noopener noreferrer" aria-label="المركز الوطني للقطاع غير الربحي">
+          <img src="https://es.ncnp.gov.sa/themes/ncnp/assets/img/npc-main-logo.svg" alt="المركز الوطني للقطاع غير الربحي" class="supervision-logo-img">
+        </a>
+        <a href="https://www.mcit.gov.sa" target="_blank" rel="noopener noreferrer" aria-label="وزارة الاتصالات وتقنية المعلومات">
+          <img src="https://www.mcit.gov.sa/themes/custom/mcit/images/mcit-logo.png" alt="وزارة الاتصالات وتقنية المعلومات" class="supervision-logo-img">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section - Vision, Mission, Values Cards -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">من نحن؟</h2>
+      
+      <!-- Vision, Mission, Values Cards -->
+      <div class="vmv-grid">
+        <!-- Vision Card -->
+        <div class="vmv-card vision-card fade-in-element">
+          <div class="vmv-icon-wrapper">
+            <svg class="vmv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="vmv-title">رؤيتنا</h3>
+          <p class="vmv-text">مجتمع رقمي فاعل يقود التحول التقني في منطقة الجوف.</p>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="vmv-card mission-card fade-in-element">
+          <div class="vmv-icon-wrapper">
+            <svg class="vmv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3 class="vmv-title">رسالتنا</h3>
+          <p class="vmv-text">رفع جاهزية الشباب لسوق العمل عبر تدريب عملي مستمر.</p>
+        </div>
+
+        <!-- Values Card -->
+        <div class="vmv-card values-card fade-in-element">
+          <div class="vmv-icon-wrapper">
+            <svg class="vmv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="vmv-title">قيمنا</h3>
+          <p class="vmv-text">التمكين • الإتقان • الشغف • الأثر • الاستمرارية</p>
+        </div>
+      </div>
+
+      <!-- About Description -->
+      <div class="about-content">
+        <p>جمعية تعليمية تقنية تهدف إلى تمكين الشباب والخريجين بمهارات رقمية عملية عبر برامج ومعسكرات تدريبية تعتمد على التطبيق وبناء المشاريع.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stats Section -->
+  <section class="section-light" id="stats">
+    <div class="container">
+      <h2 class="section-title">أثرنا حتى الآن:</h2>
+      <div class="stats-grid">
+        <div class="stat-card fade-in-element">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="1000" data-prefix="+">0</div>
+          <div class="stat-label">عضو في المجتمع التقني</div>
+        </div>
+        <div class="stat-card fade-in-element">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="500" data-prefix="+">0</div>
+          <div class="stat-label">مستفيد من برامجنا</div>
+        </div>
+        <div class="stat-card fade-in-element">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">برامج ومعسكرات تدريبية تم تنفيذها</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strength Points Section -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">اللي يميزنا:</h2>
+      <div class="strength-grid">
+        <div class="strength-card">
+          <div class="strength-icon">✓</div>
+          <div class="strength-text">تدريب عملي وليس نظري</div>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">✓</div>
+          <div class="strength-text">مشاريع تطبيقية واقعية</div>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">✓</div>
+          <div class="strength-text">مدربين بخبرة ميدانية</div>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">✓</div>
+          <div class="strength-text">بيئة تعلم تحفز التطور</div>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">✓</div>
+          <div class="strength-text">دعم مستمر بعد البرنامج</div>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">✓</div>
+          <div class="strength-text">مجتمع نشط يشارك المعرفة والفرص</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="section-light" id="programs">
+    <div class="container">
+      <h2 class="section-title">البرامج</h2>
+      <div class="programs-grid">
+        <div class="program-card fade-in-element">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="المعسكر الرقمي" class="program-image">
+          <div class="program-overlay"></div>
+          <div class="program-content">
+            <div class="program-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>المعسكر الرقمي</h3>
+            <p>أساسيات التقنية + أدوات حديثة + تطبيق عملي.</p>
+          </div>
+        </div>
+        <div class="program-card fade-in-element">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="برمجة Java" class="program-image">
+          <div class="program-overlay"></div>
+          <div class="program-content">
+            <div class="program-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>أنشئ برنامجك الأول بلغة Java</h3>
+            <p>من الصفر إلى تنفيذ برنامج فعلي خطوة بخطوة.</p>
+          </div>
+        </div>
+        <div class="program-card fade-in-element">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" alt="معسكر الويب" class="program-image">
+          <div class="program-overlay"></div>
+          <div class="program-content">
+            <div class="program-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3>معسكر الويب</h3>
+            <p>تصميم وتطوير مواقع جاهزة للإطلاق.</p>
+          </div>
+        </div>
+        <div class="program-card fade-in-element">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Power BI" class="program-image">
+          <div class="program-overlay"></div>
+          <div class="program-content">
+            <div class="program-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3>ورشة Power BI</h3>
+            <p>تحليل البيانات وإنشاء لوحات تفاعلية.</p>
+          </div>
+        </div>
+        <div class="program-card program-card--featured fade-in-element visible">
+          <div class="program-overlay"></div>
+
+          <div class="program-content">
+            <div class="program-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v6"></path>
+                <path d="M5 12h14"></path>
+                <path d="M12 22v-6"></path>
+              </svg>
+            </div>
+
+            <h3>القادم أفضل بإذن الله</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community CTA Section -->
+  <section class="community-cta" id="community">
+    <div class="community-content">
+      <div class="community-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+      </div>
+      <h2>انضم لمجتمع ترميز التقني</h2>
+      <p class="subtitle">تعلم • شارك • تقدم • تواصل</p>
+      <a href="https://chat.whatsapp.com/II1sE7jb1wlFFwYlISB322" target="_blank" class="btn btn-primary">انضم إلى مجموعة الواتساب</a>
+    </div>
+  </section>
+
+  <!-- Board Members Section -->
+  <section class="members-section" id="members">
+    <div class="container">
+      <h2 class="section-title">أعضاء الجمعية</h2>
+      
+      <div class="board-section">
+        <h3 class="board-title">مجلس الإدارة</h3>
+        <div class="members-list">
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">ع</div>
+              <div class="member-details">
+                <div class="member-name">عبدالله فرج حامد الخلف</div>
+                <div class="member-role">رئيس الجمعية</div>
+              </div>
+            </div>
+          </div>
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">ع</div>
+              <div class="member-details">
+                <div class="member-name">عبير حسين الراوي الرويلي</div>
+                <div class="member-role">نائب الرئيس</div>
+              </div>
+            </div>
+          </div>
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">ن</div>
+              <div class="member-details">
+                <div class="member-name">نور منزل عواد العوذه</div>
+                <div class="member-role">الممثل المالي</div>
+              </div>
+            </div>
+          </div>
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">س</div>
+              <div class="member-details">
+                <div class="member-name">سعد فهد سعد الزارع</div>
+                <div class="member-role">عضو مجلس إدارة</div>
+              </div>
+            </div>
+          </div>
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">ش</div>
+              <div class="member-details">
+                <div class="member-name">شهاب أحمد حمدان المفرح</div>
+                <div class="member-role">عضو مجلس إدارة</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-section">
+        <h3 class="board-title">الجمعية العمومية</h3>
+        <div class="members-list">
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">ع</div>
+              <div class="member-details">
+                <div class="member-name">عيسى رياض عبدالرحمن الحسن</div>
+                <div class="member-role">عضو</div>
+              </div>
+            </div>
+          </div>
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">س</div>
+              <div class="member-details">
+                <div class="member-name">سارة ناصر خالد الشهيلي</div>
+                <div class="member-role">عضو</div>
+              </div>
+            </div>
+          </div>
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">م</div>
+              <div class="member-details">
+                <div class="member-name">مرام فهاد مخلف المفرح</div>
+                <div class="member-role">عضو</div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="member-item">
+            <div class="member-info">
+              <div class="member-avatar">س</div>
+              <div class="member-details">
+                <div class="member-name">سلطان راشد أحمد الفلاح</div>
+                <div class="member-role">عضو</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section" id="partners">
+    <div class="container">
+      <h2 class="section-title">شركاؤنا</h2>
+      <div class="partners-carousel">
+        <div class="partners-track">
+          <div class="partner-logo">شريك 1</div>
+          <div class="partner-logo">شريك 2</div>
+          <div class="partner-logo">شريك 3</div>
+          <div class="partner-logo">شريك 4</div>
+          <div class="partner-logo">شريك 5</div>
+          <div class="partner-logo">شريك 6</div>
+          <div class="partner-logo">شريك 1</div>
+          <div class="partner-logo">شريك 2</div>
+          <div class="partner-logo">شريك 3</div>
+          <div class="partner-logo">شريك 4</div>
+          <div class="partner-logo">شريك 5</div>
+          <div class="partner-logo">شريك 6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+             <img src="logo.svg" alt="جمعية ترميز">
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/tarmiztech/" class="social-link" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <a href="https://x.com/tarmiztech" class="social-link" target="_blank" aria-label="X (Twitter)">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <p>واتساب للاستفسارات: <a href="https://wa.me/966509062674" target="_blank">اضغط هنا</a></p>
+      </div>
+      <div class="footer-bottom">
+        <p>نحن لا نُدرّس التقنية فقط… نحن نمكّن.</p>
+        <p style="margin-top: 0.5rem; color: var(--text-tertiary);">© 2025 جمعية ترميز</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
